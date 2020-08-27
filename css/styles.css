@@ -1,0 +1,117 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+}
+
+body {
+    background-color: #d9d9d9;
+}
+
+/* BANNER */
+.container {
+    background-image: url("https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.container::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    z-index: -1;
+}
+.container h1 {
+    color: #f2f2f2;
+    font-size: 120px;
+    position: absolute;
+    bottom: 300px;
+    text-shadow: 2px 4px #ff5c33, -2px -4px #ff9933;
+}
+.container h2 {
+    color: #f2f2f2;
+    font-size: 120px;
+    position: absolute;
+    bottom: 170px;
+    text-shadow: 2px 4px #ff9933, -2px -4px #ff5c33;
+}
+
+/* SEPARADOR */
+.separate {
+    height: 20px;
+    border-top: 2px solid #232323;
+    border-bottom: 2px solid #232323;
+    background: linear-gradient(to right, #ff5c33 , #ff9933);
+}
+
+/* DESCRIPCIÓN */
+.desc {
+    text-align: center;
+    font-size: x-large;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+}
+.navbar ul {
+    width: inherit;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.navbar ul li a {
+    font-size: xx-large;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li a:hover {
+    text-shadow: 1px 2px #ff5c33, -1px -2px #ff9933;
+    transition: .25s;
+}
+
+/* MAIN */
+.main {
+    /* background-image: url("https://images.pexels.com/photos/3756523/pexels-photo-3756523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+    background-image: url("https://images.pexels.com/photos/3756523/pexels-photo-3756523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: 100% 100%;
+    width:  100%;
+    height: auto;
+}
+.main {
+    padding-left: 80px;
+    padding-top: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    align-content: space-between;
+}
+.main .tags {
+    /* background: linear-gradient(to right, #ff5c33 , #ff9933); */
+    background: #e6e6e6;
+    height: auto;
+    border: 2px solid #232323;
+    padding: 15px;
+}
+.main .tags .images {
+    width: 100%;
+    height: 260px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
